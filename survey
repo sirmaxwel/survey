@@ -1,0 +1,153 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+html,
+
+body {
+  background-color: #A5A5A5;
+  text-align: center;
+  font-family: ubuntu;
+  font-size: 14px;
+}
+
+header {
+    line-height: 1em;
+}
+
+.left {
+  display: inline-block;
+  text-align: right;
+  width: 48%;
+  padding: 5px;
+  vertical-align: top;
+  margin-right: 10px;
+}
+
+.right {
+  display: inline-block;
+  text-align: left;
+  width: 48%;
+  vertial-align: middle;
+
+}
+
+#name, #email, #age {
+  border-radius: 2px;
+  border: 1px solid #c0c0c0;
+  height: 20px;
+  
+}
+
+#title {
+  font-family: ubuntu;
+  text-align: center;
+  color: #2215B9;
+  font-style: italic;
+}
+
+#description {
+  font-family: ubuntu;
+  text-align: center;
+      color: #505159;
+}
+
+#submit {
+  background-color: #CAC9DB;
+  color: #2215B9;
+  height: 30px;
+  width: 100px;
+  border-radius: 5px;
+  border: 0px;
+  margin-top: 10px;
+}
+
+#survey-form {
+  #background-color: blue;
+  max-width: 700px;
+  margin: auto auto auto auto;
+}
+</style>
+<header>
+  <h1 id="title">Car Survey</h1>
+  <p id="description">Let me help you find a vehicle!</p>
+</header>
+
+<body>
+  <form id="survey-form" action="nowhere" >
+ <div>
+      <div class=left>
+        <label id="name-label">First Name </label>
+      </div>
+      <div class=right>
+        <input type="text" placeholder="first name" id="first name" required>
+      </div>
+    </div>
+    <div>
+      <div class=left>
+        <label id="name-label">Last Name </label>
+      </div>
+      <div class=right>
+        <input type="text" placeholder="last name" id="last name" required>
+      </div>
+    </div>
+    <div>
+        <div  class=left>
+          <label id="email-label">E-mail</label>
+        </div>
+        <div class=right>
+          <input type="email" placeholder="email" id="email" required>
+        </div>
+    </div>
+    <div>
+      <div class=left>
+        <label id="brand">Select your car brand:</label>
+      </div>
+      <div class=right>
+        <select id=dropdown required>
+        <option value="general_motors">General Motors</option>
+        <option value="ford">Ford</option>
+        <option value="chrysler">Chrysler</option>
+        <option value="bmw">BMW</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="Porsche">Porsche</option>
+        <option value="Audi">Audi</option>
+        </select>
+      </div>
+    </div>
+    <div>
+      <div class=left>
+        <label id="seating_capacity">Seating Capacity:</label>
+      </div>
+      <div class=right>
+      <label><input type="radio" name="seats" value="1">Two Seats</label>
+      <label><input type="radio" name="seats" value="3">Five Seats</label>
+      <label><input type="radio" name="seats" value="4">Seven row seating</label>
+      </div>
+    </div>
+    <div>
+      <div class=left>
+        <label id="color">Color:</label>
+      </div>
+      <div class=right>
+      <label for="color"><input id="grey" type="checkbox" value="grey"> Grey</label>
+      <label for="color"><input id="black" type="checkbox" value="black"> Black</label>
+      <label for="color"><input id="white" type="checkbox" value="white"> White</label>
+    </div>
+    </div>
+
+    <div>
+    <div  class=left>
+      <label>List specific Preferences:</label>
+    </div>
+      <div class=right>
+      <textarea name="text" rows=2 cols=30></textarea>
+    </div>
+
+    </div>
+    <div>
+      <button id="submit" type="submit">Submit</button>
+    </div>
+  </form>
+</body>
+<footer></footer>
